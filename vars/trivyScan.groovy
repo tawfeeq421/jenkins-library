@@ -4,7 +4,7 @@ def call(String type, String image = ""){
         trivy fs . \
         --severity HIGH,CRITICAL \
         --format table \
-        -- no-progress \
+        --no-progress \
         > trivyfs-report.txt
         '''
     }
